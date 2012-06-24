@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rad Future</title>
+<link href="style.css" rel="stylesheet" />
+<script type="text/javascript">
+    function colorize(node){
+        var colors = ["#111", "#222", "#333"];
+        var color = colors[Math.floor((Math.random() * colors.length))];
+        node.style = "color: "+color;
+        if(node.hasChildNodes()){
+            colorize(node.childNodes[0]);
+        }
+    }
+
+    function textTimer(){
+        setTimeout("textTimer", 16);
+        colorize(document.getElementsByName("name")[0]);
+    }
+</script>
+</head>
+<body onLoad="textTimer()">
+<img id="portrait" src="devinPortrait.gif" />
+<h1 name="name">D<span>e<span>v<span>i<span>n <span>h<span>o<span>r<span>s<div class="sideways">man</div></span></span></span></span></span></span></span></span></h1>
+</body>
+</html>

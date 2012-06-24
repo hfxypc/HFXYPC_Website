@@ -1,0 +1,34 @@
+img {
+    border: 3px solid #333333;
+    }
+    
+h1 {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    font-family: Consolas;
+    color: #BBBBBB;
+    }
+span {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    -ms-transform:rotate(-4deg); /* IE 9 */
+    -moz-transform:rotate(-4deg); /* Firefox */
+    -webkit-transform:rotate(-4deg); /* Safari and Chrome */
+    -o-transform:rotate(-4deg); /* Opera */
+    transform:rotate(-4deg);
+    }
+#portrait{
+    position: absolute;
+    left: 70px;
+    top: 120px;
+    }
+.sideways {
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+    transform:rotate(90deg);
+    }
